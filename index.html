@@ -20,7 +20,9 @@
              </ul>
 
              <ul>
-                <li><button type="button">Войти</button></li>
+                <li>
+                  <a href="login.html">Войти</a>
+                </li>
             </ul>
           </nav>
       </header>
@@ -96,7 +98,28 @@
             <section>
                 <h2>Записаться</h2>
                 <p>УКАЖИТЕ ЖЕЛАЕМУЮ ДАТУ И ВРЕМЯ И МЫ СВЯЖЕМСЯ С ВАМИ ДЛЯ ПОДТВЕРЖДЕНИЯ БРОНИ</p>
-                <!--Здесь будет форма-->
+                <form action="https://echo.htmlacademy.ru" method="post">
+                  <!---->  
+                  <p>
+                      <label for="appointment-date">Дата</label>
+                      <input id="appointment-date" type="text" name="date" value="" placeholder="08.10.2017">
+                  </p> 
+                  <!---->  
+                  <p>
+                      <label for="appointment-time">Время</label>
+                      <input id="appointment-time" type="text" name="time" value="" placeholder="10:00">
+                  </p>
+                  <!---->  
+                  <p>
+                      <label for="appointment-name">Ваше Имя:</label>
+                      <input id="appointment-name" type="text" name="name" value="" placeholder="Никита">
+                      </p>
+                  <!---->
+                  <p>
+                      <label for="appointment-telephone">Телефон:</label>
+                      <input id="appointment-telephone" type="tel" name="phone" value="" placeholder="+7 701 323-0-333">
+                  </p>
+                  <button type="submit">Отправить</button>
             </section>
       </main>
 
@@ -130,12 +153,29 @@
             <h2>Личный кабинет</h2>
             <p>Введите свой логин и пароль.</p>
             <!--Здесь будет форма-->
+            <form action="https://echo.htmlacademy.ru" method="post">
+                <p>
+                  <label for="user-login">Логин</label>
+                  <input id="user-login" type="text" name="login" placeholder="email@example.com">
+                </p>
+                <p>
+                  <label for="user-password">Логин</label>
+                  <input id="user-password" type="password" name="password" placeholder="••••••••">
+                </p>
+                <p>
+                    <input type="checkbox" name="remember" id="login-password-info">
+                    <label for="login-password-info">Запомните меня</label>
+                    <a href="#">Я забыл пароль!</a>
+                </p>
+                <button type="submit">Войти </button>
+            </form>
             <button type="button">Закрыть </button>
       </section>
 
 
       <section>
             <h2>Как нас найти?</h2>
+            <p><img src="img/map.jpg" width="780" height="560" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></p>
             <button type="button">Закрыть</button>
       </section>
 
